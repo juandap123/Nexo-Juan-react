@@ -1,0 +1,375 @@
+/* ========================================================
+   ESTILOS DE TARJETAS (Cards.css)
+======================================================== */
+
+/* COMBO CARD (Inicio.html style) */
+.combo-card {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.combo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.combo-card h3 {
+  font-size: 17px;
+  margin-bottom: 12px;
+  color: #151923;
+  line-height: 1.3;
+}
+
+.combo-card .combo-image {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.combo-card .combo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.combo-card:hover .combo-image img {
+  transform: scale(1.05);
+}
+
+.combo-card p {
+  color: #555555;
+  font-size: 14px;
+  margin-bottom: 18px;
+  flex: 1;
+}
+
+.combo-card .combo-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.combo-card .combo-bottom strong {
+  color: #e31b16;
+  font-size: 20px;
+}
+
+.combo-card .btn-add-circle {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: #e31b16;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.combo-card .btn-add-circle:hover {
+  background: #b91511;
+  transform: scale(1.08);
+}
+
+/* PRODUCT CARD (Comidas.html & Restaurant style) */
+.food-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.food-card-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+.food-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.food-card:hover .food-card-img-wrap img {
+  transform: scale(1.06);
+}
+
+.restaurant-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(23, 23, 23, 0.85);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+}
+
+.food-card .info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.food-card .info h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #151923;
+}
+
+.food-card .info .food-desc {
+  color: #777777;
+  font-size: 13px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.food-card .stars {
+  color: #f59e0b;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.food-card .price {
+  color: #e50914;
+  margin: 8px 0 14px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.food-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.food-card-actions .btn-view {
+  flex: 1;
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-card-actions .btn-view:hover {
+  background: #b91511;
+}
+
+.food-card-actions .btn-add-quick {
+  background: #171717;
+  color: white;
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.food-card-actions .btn-add-quick:hover {
+  background: #e50914;
+  transform: scale(1.05);
+}
+
+/* RESTAURANT CARD (Inicio.html & Restaurantes.html style) */
+.restaurant-card {
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  min-height: 140px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.restaurant-logo {
+  width: 120px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  flex-shrink: 0;
+}
+
+.restaurant-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.restaurant-logo.frisby-logo {
+  background: #f58220;
+}
+
+.restaurant-logo.kfc-logo {
+  background: #d71920;
+}
+
+.restaurant-logo.burger-logo,
+.restaurant-logo.pizza-logo {
+  background: #171717;
+}
+
+.restaurant-logo.mcdonalds-logo {
+  background: #ffbc0d;
+}
+
+.restaurant-logo.subway-logo {
+  background: #008938;
+}
+
+.restaurant-logo.santa-rosa-logo {
+  background: #6a1b9a;
+}
+
+.restaurant-info {
+  padding: 20px;
+  flex: 1;
+}
+
+.restaurant-info h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #151923;
+}
+
+.restaurant-info p {
+  color: #777777;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.restaurant-info .rating {
+  font-size: 13px;
+  color: #555555;
+  font-weight: 500;
+}
+
+.restaurant-arrow {
+  margin-right: 20px;
+  font-size: 24px;
+  color: #888888;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.restaurant-card:hover .restaurant-arrow {
+  color: #e50914;
+  transform: translateX(4px);
+}
+
+/* RESTAURANTES GRID CARD (Restaurantes.html style) */
+.restaurant-grid-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-grid-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-grid-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  padding: 25px;
+  background: white;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.restaurant-grid-card h2 {
+  font-size: 22px;
+  margin: 18px 20px 6px;
+  color: #151923;
+}
+
+.restaurant-grid-card p {
+  margin: 0 20px 10px;
+  color: #666666;
+  font-size: 14px;
+  flex: 1;
+}
+
+.restaurant-grid-card .estrellas {
+  color: #f59e0b;
+  margin: 0 20px 18px;
+  font-size: 16px;
+}
+
+.restaurant-grid-card .boton {
+  margin: 0 20px;
+  background: #e50914;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.2s;
+  display: block;
+}
+
+.restaurant-grid-card .boton:hover {
+  background: #b91511;
+}

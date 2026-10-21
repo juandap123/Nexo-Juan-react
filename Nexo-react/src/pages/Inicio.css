@@ -1,0 +1,241 @@
+/* ========================================================
+   ESTILOS DE INICIO (Inicio.css)
+   Exactamente alineado con Inicio.css original
+======================================================== */
+
+.inicio-page {
+  width: 100%;
+}
+
+/* HERO */
+.inicio-hero {
+  min-height: 300px;
+  padding: 55px 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(90deg, #f8f9fb 45%, #ffffff 100%);
+}
+
+.inicio-hero .hero-content {
+  width: 50%;
+}
+
+.inicio-hero h1 {
+  font-size: 46px;
+  margin-bottom: 15px;
+  color: #151923;
+  line-height: 1.15;
+}
+
+.inicio-hero p {
+  color: #555555;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.inicio-hero .search-box {
+  width: 100%;
+  max-width: 560px;
+  height: 58px;
+  background: white;
+  border: 1px solid #e1e1e1;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 22px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inicio-hero .search-box:focus-within {
+  border-color: #e50914;
+  box-shadow: 0 5px 20px rgba(229, 9, 20, 0.15);
+}
+
+.inicio-hero .search-box span {
+  font-size: 22px;
+  color: #888888;
+}
+
+.inicio-hero .search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+}
+
+.inicio-hero .hero-food {
+  width: 43%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50% 0 0 50%;
+}
+
+.inicio-hero .hero-food img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SECCIONES COMUNES */
+.categories-section,
+.restaurants-section,
+.combos-section {
+  width: 82%;
+  margin: auto;
+}
+
+.categories-section h2,
+.restaurants-section h2,
+.combos-section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #151923;
+}
+
+/* CATEGORÍAS */
+.categories-section {
+  padding-top: 30px;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+}
+
+.category-btn {
+  border: 1px solid #e5e5e5;
+  background: white;
+  border-radius: 30px;
+  padding: 13px 23px;
+  font-size: 15px;
+  white-space: nowrap;
+  cursor: pointer;
+  color: #000000;
+  transition: all 0.25s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.category-btn:hover {
+  border-color: #e31b16;
+  color: #e31b16;
+}
+
+.category-btn.active {
+  background: #e31b16;
+  color: white;
+  border-color: #e31b16;
+  box-shadow: 0 4px 12px rgba(227, 27, 22, 0.25);
+}
+
+/* RESTAURANTES DESTACADOS */
+.restaurants-section {
+  padding-top: 40px;
+}
+
+.section-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header-row h2 {
+  margin-bottom: 0;
+}
+
+.section-header-row a {
+  color: #e31b16;
+  font-size: 15px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.section-header-row a:hover {
+  color: #b91511;
+  text-decoration: underline;
+}
+
+.restaurants-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* COMBOS POPULARES */
+.combos-section {
+  padding-top: 45px;
+  padding-bottom: 70px;
+}
+
+.combo-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .inicio-hero {
+    padding: 40px 5%;
+  }
+
+  .restaurants-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .combo-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .inicio-hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 25px;
+  }
+
+  .inicio-hero .hero-content {
+    width: 100%;
+  }
+
+  .inicio-hero h1 {
+    font-size: 32px;
+  }
+
+  .inicio-hero .search-box {
+    margin: 0 auto;
+  }
+
+  .inicio-hero .hero-food {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+  }
+
+  .categories-section,
+  .restaurants-section,
+  .combos-section {
+    width: 92%;
+  }
+
+  .restaurants-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .combo-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}

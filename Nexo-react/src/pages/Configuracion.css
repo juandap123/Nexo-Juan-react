@@ -1,0 +1,318 @@
+/* ========================================================
+   ESTILOS DE CONFIGURACIÓN Y NOTIFICACIONES (Configuracion.css)
+   Fiel a Configuracion.css y notificacion1.css
+======================================================== */
+
+.configuracion-page {
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.configuracion-container {
+  width: 82%;
+  max-width: 950px;
+  margin: 40px auto;
+}
+
+/* PERFIL RESUMEN */
+.configuracion-perfil-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+}
+
+.configuracion-foto {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #e50914;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.configuracion-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.configuracion-datos {
+  flex: 1;
+}
+
+.configuracion-datos h1 {
+  font-size: 26px;
+  color: #151923;
+  margin-bottom: 4px;
+}
+
+.configuracion-datos p {
+  color: #777;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.configuracion-datos button,
+.configuracion-datos a {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.configuracion-datos button:hover,
+.configuracion-datos a:hover {
+  background: #b91511;
+}
+
+/* OPCIONES LIST */
+.configuracion-seccion {
+  margin-top: 35px;
+}
+
+.configuracion-seccion h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #151923;
+}
+
+.configuracion-opciones {
+  background: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+}
+
+.config-opcion {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s;
+}
+
+.config-opcion:last-child {
+  border-bottom: none;
+}
+
+.config-opcion:hover {
+  background: #fafafa;
+}
+
+.config-icono {
+  font-size: 28px;
+  width: 45px;
+  height: 45px;
+  background: #f7f7f7;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.config-texto {
+  flex: 1;
+}
+
+.config-texto h3 {
+  font-size: 17px;
+  color: #151923;
+  margin-bottom: 4px;
+}
+
+.config-texto p {
+  color: #777;
+  font-size: 14px;
+}
+
+.config-opcion.cerrar .config-texto h3 {
+  color: #e50914;
+}
+
+/* NOTIFICACIONES PHONE FRAME PAGE */
+.notificaciones-page {
+  min-height: calc(100vh - 75px);
+  background: linear-gradient(135deg, #1e2937, #0f172a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.phone-frame {
+  width: 100%;
+  max-width: 380px;
+  height: 720px;
+  background: #111827;
+  border-radius: 50px;
+  padding: 12px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+  position: relative;
+  border: 6px solid #1f2937;
+  overflow: hidden;
+}
+
+.camera-notch {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 24px;
+  background: #111827;
+  border-radius: 20px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.camera {
+  width: 10px;
+  height: 10px;
+  background: #1e2937;
+  border-radius: 50%;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background: #f8fafc;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.status-bar {
+  height: 45px;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e2937;
+}
+
+.header-rest {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.screen-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e2937;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.promo-card {
+  background: #FF6B00;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(255, 107, 0, 0.3);
+  padding: 18px;
+  color: white;
+  text-align: center;
+}
+
+.promo-card h2 {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.promo-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.know-more {
+  background: white;
+  color: #FF6B00;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.know-more:hover {
+  transform: scale(1.04);
+}
+
+.bottom-nav {
+  height: 65px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #e2e8f0;
+}
+
+.nav-item {
+  font-size: 22px;
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+.nav-item.active {
+  color: #e50914;
+}
+
+@media (max-width: 600px) {
+  .configuracion-container {
+    width: 92%;
+    margin: 25px auto;
+  }
+
+  .configuracion-perfil-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,280 @@
+/* ========================================================
+   ESTILOS DE DETALLE DE COMIDA (FoodDetail.css)
+   Exactamente fiel a Alitas_de_pollo.css y similares
+======================================================== */
+
+.food-detail-page {
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.food-detail-container {
+  padding: 40px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TÍTULO */
+.food-detail-titulo {
+  margin-bottom: 25px;
+}
+
+.food-detail-titulo h1 {
+  font-size: 38px;
+  color: #c71111;
+  margin-bottom: 8px;
+}
+
+.food-detail-titulo p {
+  color: #363232;
+  font-size: 18px;
+}
+
+/* ÁREA PRINCIPAL */
+.zona-producto {
+  background: white;
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  gap: 50px;
+  box-shadow: 0px 10px 30px rgba(229, 9, 20, 0.15);
+  align-items: flex-start;
+  margin-bottom: 60px;
+  border: 1px solid #f0f0f0;
+}
+
+/* COLUMNA PRODUCTO */
+.producto-col {
+  flex: 1.1;
+  text-align: center;
+  border-right: 1px solid #eee;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ESTRELLAS DEL PRODUCTO */
+.estrellas-producto {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 4px;
+}
+
+.estrellas-producto span {
+  font-size: 32px;
+  color: #ffc107;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.estrellas-producto span:hover {
+  transform: scale(1.15);
+}
+
+.producto-col textarea {
+  width: 100%;
+  max-width: 450px;
+  height: 100px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  font-size: 15px;
+  resize: none;
+  margin-bottom: 20px;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.producto-col textarea:focus {
+  border-color: #e50914;
+}
+
+.producto-col .food-image-frame {
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.producto-col .food-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.producto-col h2 {
+  margin-top: 10px;
+  color: #e50914;
+  font-size: 24px;
+}
+
+.producto-col .precio-tag {
+  color: #444;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 10px 0 18px 0;
+  display: block;
+}
+
+/* Quantity control */
+.detail-qty-control {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.detail-qty-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #171717;
+  color: white;
+  border: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.detail-qty-btn:hover {
+  background: #e50914;
+}
+
+.detail-qty-num {
+  font-size: 20px;
+  font-weight: bold;
+  min-width: 30px;
+}
+
+/* BOTONES PRODUCTO */
+.btn-group-product {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.boton-carrito {
+  width: 100%;
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.boton-carrito:hover {
+  background: #b91511;
+  transform: translateY(-2px);
+}
+
+.boton-comprar {
+  width: 100%;
+  background: #171717;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.boton-comprar:hover {
+  background: #333333;
+  transform: translateY(-2px);
+}
+
+/* COLUMNA DETALLES */
+.detalles-col {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.detalles-col h3 {
+  font-size: 24px;
+  color: #151923;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.detalles-col ul {
+  padding-left: 20px;
+}
+
+.detalles-col li {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  color: #444444;
+  font-size: 15px;
+}
+
+.detalles-col .boton-calificar {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background 0.2s;
+}
+
+.detalles-col .boton-calificar:hover {
+  background: #b91511;
+}
+
+/* RECOMENDADOS */
+.related-section {
+  margin-top: 50px;
+}
+
+.related-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #151923;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 950px) {
+  .zona-producto {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .producto-col {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+
+  .detalles-col {
+    width: 100%;
+    padding-left: 0;
+  }
+}

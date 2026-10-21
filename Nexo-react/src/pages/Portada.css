@@ -1,0 +1,149 @@
+/* ========================================================
+   ESTILOS DE PORTADA Y BIENVENIDA (Portada.css)
+   Fiel a portada.css y Bienvenidso.css
+======================================================== */
+
+.portada-page {
+  min-height: calc(100vh - 75px);
+  background: #d8d8d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Celular Frame */
+.portada-telefono {
+  width: 360px;
+  height: 680px;
+  background: #111;
+  border-radius: 40px;
+  padding: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Pantalla */
+.portada-pantalla {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.portada-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.portada-logo-wrap {
+  margin-bottom: 40px;
+}
+
+.portada-logo-big {
+  color: #e50914;
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.portada-tagline {
+  color: #666;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.portada-btn-continuar {
+  background: #171717;
+  color: white;
+  border: none;
+  padding: 16px 50px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.portada-btn-continuar:hover {
+  background: #e50914;
+  transform: scale(1.05);
+}
+
+/* BIENVENIDA FULLSCREEN */
+.bienvenida-page {
+  min-height: calc(100vh - 75px);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.bienvenida-container {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.bienvenida-logo {
+  font-size: 80px;
+  font-weight: 900;
+  color: #e50914;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+
+.bienvenida-container h1 {
+  font-size: 42px;
+  color: #1e2937;
+  margin-bottom: 10px;
+}
+
+.bienvenida-container h2 {
+  font-size: 24px;
+  color: #475569;
+  margin-bottom: 25px;
+}
+
+.bienvenida-description {
+  font-size: 19px;
+  color: #64748b;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.bienvenida-btn {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 16px 60px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.bienvenida-btn:hover {
+  background: #b91511;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(229, 9, 20, 0.3);
+}
+
+.bienvenida-stars {
+  font-size: 36px;
+  color: #fbbf24;
+  margin-top: 50px;
+}

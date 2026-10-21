@@ -1,0 +1,193 @@
+/* ========================================================
+   ESTILOS DE COMIDAS (Comidas.css)
+   Exactamente alineado con Comidas.css original
+======================================================== */
+
+.comidas-page {
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+/* HERO */
+.comidas-hero {
+  margin: 30px auto;
+  width: 90%;
+  max-width: 1200px;
+  background: linear-gradient(135deg, #e50914, #ff3b3b);
+  border-radius: 25px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 10px 30px rgba(229, 9, 20, 0.25);
+}
+
+.comidas-hero .hero-content h1 {
+  font-size: 46px;
+  color: white;
+  line-height: 1.15;
+}
+
+.comidas-hero .hero-content p {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  font-size: 17px;
+  opacity: 0.95;
+}
+
+.comidas-hero .search-box {
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.comidas-hero .search-box input {
+  flex: 1;
+  border: none;
+  padding: 15px 20px;
+  font-size: 15px;
+  outline: none;
+}
+
+.comidas-hero .search-box button {
+  background: #171717;
+  color: white;
+  border: none;
+  padding: 15px 22px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+
+.comidas-hero .search-box button:hover {
+  background: #333333;
+}
+
+.comidas-hero .hero-image img {
+  width: 340px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* CATEGORÍAS */
+.comidas-categorias-wrap {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+}
+
+.comidas-categorias {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.comidas-categorias button {
+  background: white;
+  border: 1px solid #e5e5e5;
+  padding: 10px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.comidas-categorias button:hover {
+  border-color: #e50914;
+  color: #e50914;
+}
+
+.comidas-categorias button.active {
+  background: #e50914;
+  color: white;
+  border-color: #e50914;
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.25);
+}
+
+/* OFERTA */
+.comidas-oferta {
+  margin: 25px auto 35px auto;
+  width: 90%;
+  max-width: 1200px;
+  background: white;
+  padding: 24px 28px;
+  border-left: 6px solid #e50914;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.comidas-oferta h2 {
+  font-size: 20px;
+  color: #151923;
+  margin-bottom: 6px;
+}
+
+.comidas-oferta p {
+  color: #555555;
+  font-size: 15px;
+}
+
+/* PRODUCTOS GRID */
+.comidas-grid {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* NO RESULTS */
+.comidas-empty {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.comidas-empty h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.comidas-empty p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .comidas-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    padding: 30px 20px;
+  }
+
+  .comidas-hero .search-box {
+    margin: 0 auto;
+  }
+
+  .comidas-hero .hero-image img {
+    width: 100%;
+    max-width: 300px;
+    height: 180px;
+  }
+}

@@ -1,0 +1,149 @@
+/* ========================================================
+   ESTILOS DE CALIFICAR REPARTIDOR (CalificarRepartidor.css)
+   Fiel a Calificar_al_Repartidor.css
+======================================================== */
+
+.calificar-page {
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.calificar-container {
+  padding: 50px 8%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.calificar-titulo h1 {
+  font-size: 38px;
+  color: #c71111;
+  margin-bottom: 8px;
+}
+
+.calificar-titulo p {
+  color: #363232;
+  font-size: 18px;
+}
+
+.zona-calificacion {
+  margin-top: 40px;
+  background: white;
+  border-radius: 25px;
+  padding: 40px;
+  display: flex;
+  gap: 60px;
+  max-width: 900px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+}
+
+/* REPARTIDOR */
+.repartidor-col {
+  width: 280px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.repartidor-col img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fdf2f2;
+  border: 3px solid #fecaca;
+  padding: 10px;
+}
+
+.repartidor-col h2 {
+  margin-top: 18px;
+  color: #333;
+  font-size: 22px;
+}
+
+.repartidor-col span {
+  color: #777;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
+
+/* CALIFICACIÓN */
+.calificar-col {
+  flex: 1;
+}
+
+.calificar-col h3 {
+  font-size: 22px;
+  color: #333;
+}
+
+.calificar-col .estrellas-rating {
+  margin: 20px 0;
+  display: flex;
+  gap: 8px;
+}
+
+.calificar-col .estrellas-rating span {
+  font-size: 42px;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.calificar-col .estrellas-rating span:hover {
+  transform: scale(1.15);
+}
+
+.calificar-col textarea {
+  width: 100%;
+  height: 130px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  font-size: 15px;
+  resize: none;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.calificar-col textarea:focus {
+  border-color: #e50914;
+}
+
+.btn-enviar-calificacion {
+  margin-top: 25px;
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-enviar-calificacion:hover {
+  background: #b91511;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .zona-calificacion {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .repartidor-col {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding-right: 0;
+    padding-bottom: 25px;
+  }
+}

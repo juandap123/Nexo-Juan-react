@@ -1,0 +1,503 @@
+/* ========================================================
+   ESTILOS DE PERFIL (Perfil.css)
+   Fiel a perfil.css y perfil2.css originales
+======================================================== */
+
+.perfil-page {
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.perfil-container {
+  width: 82%;
+  max-width: 1100px;
+  margin: 45px auto 70px auto;
+}
+
+/* CABECERA DEL PERFIL */
+.perfil-header {
+  background: white;
+  border-radius: 16px;
+  padding: 30px 35px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  margin-bottom: 25px;
+  border: 1px solid #f0f0f0;
+}
+
+/* FOTO DE PERFIL */
+.foto-perfil {
+  width: 90px;
+  height: 90px;
+  background: #171717;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+  overflow: visible;
+  flex-shrink: 0;
+}
+
+.foto-perfil img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.foto-perfil:hover {
+  background: #e31b16;
+  transform: scale(1.05);
+}
+
+.icono-cambiar {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  width: 30px;
+  height: 30px;
+  background: #e31b16;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.perfil-titulo h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: #151923;
+}
+
+.perfil-titulo p {
+  color: #777777;
+  font-size: 15px;
+}
+
+/* BOTONES DE SECCIÓN (TABS) */
+.secciones-perfil {
+  background: white;
+  border-radius: 14px;
+  padding: 8px;
+  display: flex;
+  width: 100%;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+}
+
+.seccion-btn {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 15px;
+  border-radius: 9px;
+  font-size: 16px;
+  color: #555555;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+  text-align: center;
+}
+
+.seccion-btn:hover {
+  background: #f2f2f2;
+}
+
+.seccion-btn.activa {
+  background: #e31b16;
+  color: white;
+  font-weight: bold;
+}
+
+/* SECCIÓN DETALLES */
+.detalles {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #f0f0f0;
+}
+
+.dato {
+  min-height: 82px;
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.dato:hover {
+  border-color: #e31b16;
+  background: #fffafa;
+}
+
+.dato-informacion span {
+  display: block;
+  color: #e31b16;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.dato-informacion p {
+  color: #333333;
+  font-size: 16px;
+}
+
+.editar-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #171717;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editar-btn:hover {
+  background: #e31b16;
+  transform: scale(1.08);
+}
+
+/* BOTÓN CERTIFICADO */
+.certificado-link-card {
+  width: 100%;
+  min-height: 65px;
+  margin-top: 10px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 12px;
+  background: #171717;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.certificado-link-card:hover {
+  background: #e31b16;
+  transform: translateY(-2px);
+}
+
+.certificado-link-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.certificado-flecha {
+  font-size: 21px;
+}
+
+/* CERRAR SESIÓN */
+.cerrar-sesion {
+  width: 100%;
+  min-height: 55px;
+  margin-top: 8px;
+  border: 1px solid #e31b16;
+  border-radius: 12px;
+  background: white;
+  color: #e31b16;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cerrar-sesion:hover {
+  background: #fff0f0;
+}
+
+/* SECCIÓN MIS ACTIVIDADES */
+.actividades {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+}
+
+.actividades-titulo {
+  margin-bottom: 25px;
+}
+
+.actividades-titulo h2 {
+  font-size: 24px;
+  margin-bottom: 7px;
+  color: #151923;
+}
+
+.actividades-titulo p {
+  color: #777777;
+  font-size: 15px;
+}
+
+.pedidos-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+}
+
+.pedidos-header h3 {
+  font-size: 18px;
+  color: #151923;
+}
+
+.pedidos-header span {
+  background: #f1f1f1;
+  color: #555555;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ARTICULO PEDIDO */
+.pedido-card-item {
+  width: 100%;
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  gap: 22px;
+  margin-bottom: 18px;
+  transition: 0.3s;
+}
+
+.pedido-card-item:hover {
+  border-color: #e31b16;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.pedido-imagen {
+  width: 145px;
+  height: 125px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #eeeeee;
+}
+
+.pedido-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pedido-informacion {
+  flex: 1;
+}
+
+.pedido-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.pedido-superior h3 {
+  font-size: 18px;
+  color: #151923;
+}
+
+.pedido-superior .estado {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.eliminar-pedido-btn {
+  border: none;
+  background: transparent;
+  color: #e31b16;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.eliminar-pedido-btn:hover {
+  text-decoration: underline;
+}
+
+.pedido-informacion p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.pedido-informacion strong {
+  display: block;
+  font-size: 18px;
+  color: #e31b16;
+  margin-bottom: 12px;
+}
+
+.pedido-separador {
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+  margin: 10px 0;
+}
+
+.eliminar-todo-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.eliminar-todo-btn {
+  border: 1px solid #e31b16;
+  background: white;
+  color: #e31b16;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.eliminar-todo-btn:hover {
+  background: #e31b16;
+  color: white;
+}
+
+/* EDIT PROFILE MODAL */
+.edit-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.edit-modal-box {
+  background: white;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 480px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.edit-modal-box h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.edit-field {
+  margin-bottom: 15px;
+}
+
+.edit-field label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.edit-field input,
+.edit-field select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.edit-modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.btn-save-profile {
+  flex: 1;
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 13px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-cancel-modal {
+  flex: 1;
+  background: #eeeeee;
+  color: #333;
+  border: none;
+  padding: 13px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .perfil-container {
+    width: 92%;
+    margin: 25px auto;
+  }
+
+  .perfil-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 20px;
+  }
+
+  .pedido-card-item {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .pedido-imagen {
+    width: 100%;
+    height: 150px;
+  }
+}
